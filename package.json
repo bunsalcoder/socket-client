@@ -1,0 +1,19 @@
+{
+  "name": "@core/socket-client",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc --build",
+    "test": "jest --roots=./__test__",
+    "test:dev": "npm run test -- --watchAll",
+    "dev": "npm run build -- -w",
+    "jsdoc": "npm run build && jsdoc build/**/* -d jsdoc",
+    "eslint": "eslint src --ext .ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "socket.io-client": "^4.7.5"
+  }
+}
